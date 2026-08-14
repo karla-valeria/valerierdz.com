@@ -1283,23 +1283,69 @@ padding: 20px;
    cover images.
 */
 
-.project-one {
-  background-image: url("../assets/images/portfolio/project_one_cover.png");
+.green-ghost {
+  background-image: url("../assets/images/portfolio/green_ghost_cover.png");
 }
 
-.project-two {
-  background-image: url("../assets/images/portfolio/project_two_cover.png");
+.varner-studio {
+  background-image: url("../assets/images/portfolio/varner_studio_cover.png");
 }
 
+.canela-baked-goods {
+  background-image: url("../assets/images/portfolio/canela_cover.png");
+}
+
+.casa-noir {
+  background-image: url("../assets/images/portfolio/casa_noir_cover.png");
+}
+
+.logofolio-vol-one {
+  background-image: url("../assets/images/portfolio/logofolio_vol1_cover.png");
+}
+
+.lumo {
+  background-image: url("../assets/images/portfolio/lumo_cover.png");
+}
+
+.hardee-aviation-pitch-deck {
+  background-image: url("../assets/images/portfolio/hardee_aviation_cover.png");
+}
+
+.lumo-social-media-system {
+  background-image: url("../assets/images/portfolio/lumo_social_media_cover.png");
+}
+
+.squid-ink-menu {
+  background-image: url("../assets/images/portfolio/squid_ink_cover.png");
+}
+
+.vrdz-business-cards {
+  background-image: url("../assets/images/portfolio/vrdz_biz_cards_cover.png");
+}
+
+.aurora-creative-studios-brochure {
+  background-image: url("../assets/images/portfolio/aurora_creative_cover.png");
+}
 
 /* Dark overlay */
+
+.brand-identity-page .project-card-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-color: rgba(35, 37, 39, .0);
+
+  transition: background-color 0.3s ease;
+}
+
 
 .project-card-image::before {
   content: "";
   position: absolute;
   inset: 0;
 
-  background-color: rgba(35, 37, 39, 0.15);
+  background-color: rgba(35, 37, 39, 0.45);
 
   transition: background-color 0.3s ease;
 }
@@ -1332,11 +1378,14 @@ padding: 20px;
   font-size: 16px;
 }
 
-
 /* Hover */
 
+.brand-identity-page .project-card:hover .project-card-image::before {
+  background-color: rgba(35, 37, 39, 0.35);
+}
+
 .project-card:hover .project-card-image::before {
-  background-color: rgba(35, 37, 39, 0.55);
+  background-color: rgba(35, 37, 39, 0.75);
 }
 
 .project-card:hover .project-card-overlay h2 {
