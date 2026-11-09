@@ -1283,6 +1283,10 @@ padding: 20px;
    cover images.
 */
 
+.breakfast-club {
+  background-image: url("../assets/images/portfolio/breakfast_club_cover.png");
+}
+
 .green-ghost {
   background-image: url("../assets/images/portfolio/green_ghost_cover.png");
 }
